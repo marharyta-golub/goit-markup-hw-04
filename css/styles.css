@@ -1,3 +1,7 @@
+:root {
+  --cloud: #f4f4fd;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -42,6 +46,10 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow:
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .menu {
   display: flex;
@@ -80,6 +88,10 @@ header .logo {
   letter-spacing: 0.02em;
   color: #2e2f42;
   position: relative;
+}
+
+.nav-link.current {
+  color: #404bbf;
 }
 
 .nav-link:hover,
@@ -129,6 +141,7 @@ header .logo {
 /* ===HERO==== */
 
 .hero {
+  background-size: cover;
   padding: 188px 0;
   background-color: #2e2f42;
   max-width: 1440px;
@@ -170,6 +183,7 @@ header .logo {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -281,6 +295,10 @@ header .logo {
 .social-link:hover,
 .social-link:focus {
   background-color: #404bbf;
+}
+
+.svg-social {
+  fill: var(--cloud);
 }
 
 .team-thumb {
